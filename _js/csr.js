@@ -457,7 +457,9 @@ function actualizar() {
         .catch(error => console.log('error', error));
 
     mostrarBotones();
-    alert("Pedido actualizado exitosamente!")
+    alert("Pedido generado con numero: " + customPropValue )
+
+    document.getElementById('txtSalesOrder').value = "";
 }
 
 function mostrarBotones() {
